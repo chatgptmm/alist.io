@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>素材模板</title>
+
+    <!-- CSS 样式 -->
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            font-size: 14px;
+        }
+        th, td {
+            padding: 8px;
+            text-align: center;
+            border: 1px solid #dddddd;
+        }
+        th {
+            background-color: #dddddd;
+            font-weight: bold;
+        }
+        /* 新增CSS规则：使TOP按钮浮动在页面右下角 */
+        #topBtn {
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            background-color: #5F9EA0;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 4px;
+            width: 80px;
+            height: 80px;
+            transition: opacity 0.3s;
+            opacity: 0.5;
+            z-index: 99;
+        }
+        #topBtn:hover {
+            opacity: 1;
+        }
+    </style>
+
+    <!-- JavaScript -->
+    <script>
+        function goToHomepage() {
+            window.location.href = "../index.html";
+        }
+
+        /* 新增JavaScript函数：回到页面顶部 */
+        function backToTop() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+        /* 新增JavaScript函数：检查页面滚动位置，显示或隐藏TOP按钮 */
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("topBtn").style.display = "block";
+            } else {
+                document.getElementById("topBtn").style.display = "none";
+            }
+        }
+    </script>
+
+</head>
+<body>
+
+    <h1><a href="素材模板"></a></h1>
+    <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: center;">
+      <th>类别</th>
+      <th>名称</th>
+      <th>链接</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Word,Excel,PPT</td>
+      <td>模板大全</td>
+      <td>https://www.aliyundrive.com/s/9rAViqTfmFS</td>
+    </tr>
+    <tr>
+      <td>Word</td>
+      <td>简历模板</td>
+      <td>https://www.aliyundrive.com/s/UU8yFFVJiBf</td>
+    </tr>
+    <tr>
+      <td>Word</td>
+      <td>简历模板100+</td>
+      <td>https://www.aliyundrive.com/s/2QZGUTSy982</td>
+    </tr>
+    <tr>
+      <td>AE PR</td>
+      <td>AE PR模板</td>
+      <td>https://www.aliyundrive.com/s/gSGrGcPTX4c</td>
+    </tr>
+    <tr>
+      <td>PPT</td>
+      <td>年终总结PPT</td>
+      <td>https://www.aliyundrive.com/s/Fy9yaQwVgzE</td>
+    </tr>
+  </tbody>
+</table>
+    <hr>
+    <h2></h2>
+    <ul>
+    <li><a href="首页.html">首页</a></li><li><a href="剧集.html">剧集</a></li><li><a href="电影.html">电影</a></li><li><a href="学习.html">学习</a></li><li><a href="动漫.html">动漫</a></li><li><a href="纪录片.html">纪录片</a></li><li><a href="软件.html">软件</a></li><li><a href="综艺.html">综艺</a></li><li><a href="【成人专区】.html">【成人专区】</a></li><li><a href="书籍.html">书籍</a></li><li><a href="合集专区.html">合集专区</a></li>
+    </ul>
+     <!-- 新增TOP按钮 -->
+     <button id="topBtn" onclick="backToTop()">TOP</button>
+     <button onclick="window.location.href='../../index.html'">Alis导航</button>
+</body>
+</html>

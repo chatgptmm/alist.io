@@ -1,0 +1,493 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>学习</title>
+
+    <!-- CSS 样式 -->
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            font-size: 14px;
+        }
+        th, td {
+            padding: 8px;
+            text-align: center;
+            border: 1px solid #dddddd;
+        }
+        th {
+            background-color: #dddddd;
+            font-weight: bold;
+        }
+        /* 新增CSS规则：使TOP按钮浮动在页面右下角 */
+        #topBtn {
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            background-color: #5F9EA0;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 4px;
+            width: 80px;
+            height: 80px;
+            transition: opacity 0.3s;
+            opacity: 0.5;
+            z-index: 99;
+        }
+        #topBtn:hover {
+            opacity: 1;
+        }
+    </style>
+
+    <!-- JavaScript -->
+    <script>
+        function goToHomepage() {
+            window.location.href = "../index.html";
+        }
+
+        /* 新增JavaScript函数：回到页面顶部 */
+        function backToTop() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+        /* 新增JavaScript函数：检查页面滚动位置，显示或隐藏TOP按钮 */
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("topBtn").style.display = "block";
+            } else {
+                document.getElementById("topBtn").style.display = "none";
+            }
+        }
+    </script>
+
+</head>
+<body>
+
+    <h1><a href="学习"></a></h1>
+    <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: center;">
+      <th>类别</th>
+      <th>名称</th>
+      <th>链接</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>编程</td>
+      <td>编程开发大合集</td>
+      <td>https://www.aliyundrive.com/s/7ScWBijmR2V</td>
+    </tr>
+    <tr>
+      <td>编程</td>
+      <td>K8S</td>
+      <td>https://www.aliyundrive.com/s/DkNrg2BroiC</td>
+    </tr>
+    <tr>
+      <td>编程</td>
+      <td>马士兵java高级互联网架构师</td>
+      <td>https://www.aliyundrive.com/s/z14vkFjnuXS</td>
+    </tr>
+    <tr>
+      <td>编程</td>
+      <td>高琪最新java课程B站268元购</td>
+      <td>https://www.aliyundrive.com/s/JWfHG3kan1L</td>
+    </tr>
+    <tr>
+      <td>编程</td>
+      <td>算法训练营</td>
+      <td>https://www.aliyundrive.com/s/cB4Yo4tLSPW</td>
+    </tr>
+    <tr>
+      <td>编程</td>
+      <td>全套零基础AE教程</td>
+      <td>https://www.aliyundrive.com/s/G5SDKWWXSKK</td>
+    </tr>
+    <tr>
+      <td>PS</td>
+      <td>90分钟学pr新手教程</td>
+      <td>https://www.aliyundrive.com/s/NnnZRpMVeyi</td>
+    </tr>
+    <tr>
+      <td>PS</td>
+      <td>橘子老师PS教程(800集)</td>
+      <td>https://www.aliyundrive.com/s/nNHeL65K4tc</td>
+    </tr>
+    <tr>
+      <td>编程</td>
+      <td>C#基础教程（合集版）</td>
+      <td>https://www.aliyundrive.com/s/y329LyCww8e</td>
+    </tr>
+    <tr>
+      <td>编程</td>
+      <td>UI设计零基础全集教程（AI XD AE PS教程）200节全集</td>
+      <td>https://www.aliyundrive.com/s/D5drebG5Faq</td>
+    </tr>
+    <tr>
+      <td>编程</td>
+      <td>Java程序员让女神疯狂的秘密，白嫖价值9.9元的小游戏（QQ信息轰炸辅助外挂）</td>
+      <td>https://www.aliyundrive.com/s/axjn2KX1HZc</td>
+    </tr>
+    <tr>
+      <td>编程</td>
+      <td>JavaEE进阶教程 大学生毕业设计教学辅助系统，4天全项目实战</td>
+      <td>https://www.aliyundrive.com/s/vV2zxJcKQpc</td>
+    </tr>
+    <tr>
+      <td>编程</td>
+      <td>java编程</td>
+      <td>https://www.aliyundrive.com/s/XiRSGjfmZqo</td>
+    </tr>
+    <tr>
+      <td>编程</td>
+      <td>黑马前端</td>
+      <td>https://www.aliyundrive.com/s/MxXZUJ155ty</td>
+    </tr>
+    <tr>
+      <td>编程</td>
+      <td>Linux之Centos7的教程</td>
+      <td>https://www.aliyundrive.com/s/HNVmAXwSA9x</td>
+    </tr>
+    <tr>
+      <td>编程</td>
+      <td>SpringCloud微服务2021实战教程</td>
+      <td>https://www.aliyundrive.com/s/BZAiZh7eD6r</td>
+    </tr>
+    <tr>
+      <td>大学</td>
+      <td>中国电气工程大典</td>
+      <td>https://www.aliyundrive.com/s/B1D15agbMgK</td>
+    </tr>
+    <tr>
+      <td>高中</td>
+      <td>初高中学习资料合集</td>
+      <td>https://www.aliyundrive.com/s/yykagY3Rao2</td>
+    </tr>
+    <tr>
+      <td>NaN</td>
+      <td>高效笔记术</td>
+      <td>https://www.aliyundrive.com/s/LgrGsr5b6zk</td>
+    </tr>
+    <tr>
+      <td>大学</td>
+      <td>猴博士考研</td>
+      <td>https://www.aliyundrive.com/s/ji6P8UiiMFE</td>
+    </tr>
+    <tr>
+      <td>大学</td>
+      <td>猴博士爱讲课4小时讲完《C语言》</td>
+      <td>https://www.aliyundrive.com/s/yVE2Suh6Hax</td>
+    </tr>
+    <tr>
+      <td>大学</td>
+      <td>猴博士爱讲课2小时讲完《线性代数》</td>
+      <td>https://www.aliyundrive.com/s/GWt6o4U5Fg7</td>
+    </tr>
+    <tr>
+      <td>大学</td>
+      <td>电路理论</td>
+      <td>https://www.aliyundrive.com/s/WRQotFg6Zeo</td>
+    </tr>
+    <tr>
+      <td>大学</td>
+      <td>数字电路</td>
+      <td>https://www.aliyundrive.com/s/SgmpnPZurM8</td>
+    </tr>
+    <tr>
+      <td>大学</td>
+      <td>概率论</td>
+      <td>https://www.aliyundrive.com/s/AgWg9UoSe4R</td>
+    </tr>
+    <tr>
+      <td>大学</td>
+      <td>电工学</td>
+      <td>https://www.aliyundrive.com/s/2ekNdYmvJKZ</td>
+    </tr>
+    <tr>
+      <td>大学</td>
+      <td>材料力学</td>
+      <td>https://www.aliyundrive.com/s/EzHF2GokLkj</td>
+    </tr>
+    <tr>
+      <td>大学</td>
+      <td>理论力学</td>
+      <td>https://www.aliyundrive.com/s/PJ3j6SRhsfw</td>
+    </tr>
+    <tr>
+      <td>大学</td>
+      <td>猴博士大学物理视频</td>
+      <td>https://www.aliyundrive.com/s/pMzzcnkcg5j</td>
+    </tr>
+    <tr>
+      <td>大学</td>
+      <td>猴博士爱讲课4小时讲完《概率论与数理统计》</td>
+      <td>https://www.aliyundrive.com/s/UAeiQvMMhL4</td>
+    </tr>
+    <tr>
+      <td>大学</td>
+      <td>猴博士爱讲课3小时讲完《高等数学·下》</td>
+      <td>https://www.aliyundrive.com/s/YwYKPfQYLe9</td>
+    </tr>
+    <tr>
+      <td>大学</td>
+      <td>猴博士爱讲课2小时讲完《高等数学·上》</td>
+      <td>https://www.aliyundrive.com/s/xTGXRqti179</td>
+    </tr>
+    <tr>
+      <td>大学</td>
+      <td>八堂课不挂科-模拟电路等多个文件</td>
+      <td>https://www.aliyundrive.com/s/q7TJRggrQCC</td>
+    </tr>
+    <tr>
+      <td>早教</td>
+      <td>米卡唐诗</td>
+      <td>https://www.aliyundrive.com/s/jRTSHmpDjoL</td>
+    </tr>
+    <tr>
+      <td>早教</td>
+      <td>小步在线早教</td>
+      <td>https://www.aliyundrive.com/s/c8RNcasQxoa</td>
+    </tr>
+    <tr>
+      <td>编程</td>
+      <td>大厂Java面试 300 题</td>
+      <td>https://www.aliyundrive.com/s/wRznVNJpJ9Y</td>
+    </tr>
+    <tr>
+      <td>编程</td>
+      <td>Spring</td>
+      <td>https://www.aliyundrive.com/s/Ny5Ry5Npn5v</td>
+    </tr>
+    <tr>
+      <td>编程</td>
+      <td>JAVA</td>
+      <td>https://www.aliyundrive.com/s/WyeaQYcuxcC</td>
+    </tr>
+    <tr>
+      <td>语言</td>
+      <td>万维钢 精英日课四季全</td>
+      <td>https://www.aliyundrive.com/s/5N2FivXC72W</td>
+    </tr>
+    <tr>
+      <td>语言</td>
+      <td>新概念英语</td>
+      <td>https://www.aliyundrive.com/s/pfLomYeyJHz</td>
+    </tr>
+    <tr>
+      <td>小学</td>
+      <td>《小学全套》2019年【327.66G】</td>
+      <td>https://www.aliyundrive.com/s/xf1hbTooeeK</td>
+    </tr>
+    <tr>
+      <td>小学</td>
+      <td>《小学全套》2020年【95.5G】</td>
+      <td>https://www.aliyundrive.com/s/avNMsiTeXbP</td>
+    </tr>
+    <tr>
+      <td>小学</td>
+      <td>《小学全套》2021年【423.26G】</td>
+      <td>https://www.aliyundrive.com/s/uLHj19T3sM9</td>
+    </tr>
+    <tr>
+      <td>初中</td>
+      <td>《初中全套》2019-2020年【553.5G】</td>
+      <td>https://www.aliyundrive.com/s/KsyT3v5qvWy</td>
+    </tr>
+    <tr>
+      <td>高中</td>
+      <td>《高中全套》2019【427.8G】</td>
+      <td>https://www.aliyundrive.com/s/pQ9VgFBZtjL</td>
+    </tr>
+    <tr>
+      <td>高中</td>
+      <td>《高中全套》2020【214.86】</td>
+      <td>https://www.aliyundrive.com/s/3mVzpmsrmYz</td>
+    </tr>
+    <tr>
+      <td>高中</td>
+      <td>《高中英语》专区【32G】</td>
+      <td>https://www.aliyundrive.com/s/DaaacMS4bF5</td>
+    </tr>
+    <tr>
+      <td>NaN</td>
+      <td>春季培优2021年【23.54G】</td>
+      <td>https://www.aliyundrive.com/s/D6i1RsrvxWc</td>
+    </tr>
+    <tr>
+      <td>幼儿</td>
+      <td>幼小衔接计算课</td>
+      <td>https://www.aliyundrive.com/s/F1LYv1kvbwz</td>
+    </tr>
+    <tr>
+      <td>小学</td>
+      <td>小学生作文【2G】</td>
+      <td>https://www.aliyundrive.com/s/8L5ADW815h3</td>
+    </tr>
+    <tr>
+      <td>初中</td>
+      <td>学而思1-9年级最全英语语法教学视频</td>
+      <td>https://www.aliyundrive.com/s/MKXUicxFVBC</td>
+    </tr>
+    <tr>
+      <td>office</td>
+      <td>PPT教程大合集</td>
+      <td>https://www.aliyundrive.com/s/8mURjX7Frt9</td>
+    </tr>
+    <tr>
+      <td>office</td>
+      <td>EXCEL教程合集</td>
+      <td>https://www.aliyundrive.com/s/p5N4nycZwdZ</td>
+    </tr>
+    <tr>
+      <td>office</td>
+      <td>WORD教程合集</td>
+      <td>https://www.aliyundrive.com/s/3cfRyinC8We</td>
+    </tr>
+    <tr>
+      <td>编程</td>
+      <td>现代C++实战30讲</td>
+      <td>https://www.aliyundrive.com/s/pYuytXwLFVn</td>
+    </tr>
+    <tr>
+      <td>编程</td>
+      <td>清华大学软件开发大全集从...列（套装共12册）</td>
+      <td>https://www.aliyundrive.com/s/ddaqKJkgACA</td>
+    </tr>
+    <tr>
+      <td>编程</td>
+      <td>程序员的数学基础课</td>
+      <td>https://www.aliyundrive.com/s/NirNSVzqkai</td>
+    </tr>
+    <tr>
+      <td>编程</td>
+      <td>人人都能学会的编程入门课</td>
+      <td>https://www.aliyundrive.com/s/T9d8Spk2dC5</td>
+    </tr>
+    <tr>
+      <td>编程</td>
+      <td>鸿蒙系统官方最全教程</td>
+      <td>https://www.aliyundrive.com/s/ugZ9t7rrMVE</td>
+    </tr>
+    <tr>
+      <td>编程</td>
+      <td>零基础学习Linux操作系统</td>
+      <td>https://www.aliyundrive.com/s/S5W2CUQZVXZ</td>
+    </tr>
+    <tr>
+      <td>编程</td>
+      <td>60门编程语言学习书籍超级大合集</td>
+      <td>https://www.aliyundrive.com/s/iev5T7QbRVN</td>
+    </tr>
+    <tr>
+      <td>编程</td>
+      <td>畅销3年的Python分布式爬虫课程全套</td>
+      <td>https://www.aliyundrive.com/s/mtFTT9tpRqa</td>
+    </tr>
+    <tr>
+      <td>编程</td>
+      <td>人工智能</td>
+      <td>https://www.aliyundrive.com/s/5k2FExKhYg9</td>
+    </tr>
+    <tr>
+      <td>编程</td>
+      <td>零基础学Java</td>
+      <td>https://www.aliyundrive.com/s/37nHNqgtmiA</td>
+    </tr>
+    <tr>
+      <td>编程</td>
+      <td>网络编程实战</td>
+      <td>https://www.aliyundrive.com/s/PfpGvASZRBi</td>
+    </tr>
+    <tr>
+      <td>编程</td>
+      <td>极客时间视频课合集</td>
+      <td>https://www.aliyundrive.com/s/Nv9qu6yEXnw</td>
+    </tr>
+    <tr>
+      <td>编程</td>
+      <td>C语言程序设计</td>
+      <td>https://www.aliyundrive.com/s/RSM4sQiTEgn</td>
+    </tr>
+    <tr>
+      <td>编程</td>
+      <td>极客时间.9小时搞定微信小程序开发</td>
+      <td>https://www.aliyundrive.com/s/HLAKVtQ2vrr</td>
+    </tr>
+    <tr>
+      <td>编程</td>
+      <td>1900套计算机专业毕设项目代码源文件</td>
+      <td>https://www.aliyundrive.com/s/xi7b9pesX42</td>
+    </tr>
+    <tr>
+      <td>编程</td>
+      <td>黑马程序员linux入门到精通</td>
+      <td>https://www.aliyundrive.com/s/Hiv7KWrbSGH</td>
+    </tr>
+    <tr>
+      <td>编程</td>
+      <td>微信小程序视频教程（全）</td>
+      <td>https://www.aliyundrive.com/s/Z6jo5b3xHwN</td>
+    </tr>
+    <tr>
+      <td>编程</td>
+      <td>千峰编程教程</td>
+      <td>https://www.aliyundrive.com/s/EF5FdLt7xkZ</td>
+    </tr>
+    <tr>
+      <td>编程</td>
+      <td>罗剑锋的C++实战笔记</td>
+      <td>https://www.aliyundrive.com/s/CYdHjVvbg7F</td>
+    </tr>
+    <tr>
+      <td>编程</td>
+      <td>Java网站代码源文件</td>
+      <td>https://www.aliyundrive.com/s/VPzjtzEFedN</td>
+    </tr>
+    <tr>
+      <td>编程</td>
+      <td>数据结构与算法分析</td>
+      <td>https://www.aliyundrive.com/s/Axa21K7fLfi</td>
+    </tr>
+    <tr>
+      <td>编程</td>
+      <td>Bilibili排行榜爬虫</td>
+      <td>https://www.aliyundrive.com/s/JkBQwsaYcXL</td>
+    </tr>
+    <tr>
+      <td>编程</td>
+      <td>Python大合集</td>
+      <td>https://www.aliyundrive.com/s/NhiwyWUz5FZ</td>
+    </tr>
+    <tr>
+      <td>游戏</td>
+      <td>小棉花-王者荣耀课程</td>
+      <td>https://www.aliyundrive.com/s/rvbf2dUPXvo</td>
+    </tr>
+    <tr>
+      <td>NaN</td>
+      <td>黑群晖NAS教程合集</td>
+      <td>https://www.aliyundrive.com/s/i88h6WiY7jZ</td>
+    </tr>
+  </tbody>
+</table>
+    <hr>
+    <h2></h2>
+    <ul>
+    <li><a href="首页.html">首页</a></li><li><a href="剧集.html">剧集</a></li><li><a href="电影.html">电影</a></li><li><a href="动漫.html">动漫</a></li><li><a href="纪录片.html">纪录片</a></li><li><a href="软件.html">软件</a></li><li><a href="综艺.html">综艺</a></li><li><a href="【成人专区】.html">【成人专区】</a></li><li><a href="书籍.html">书籍</a></li><li><a href="合集专区.html">合集专区</a></li><li><a href="素材模板.html">素材模板</a></li>
+    </ul>
+     <!-- 新增TOP按钮 -->
+     <button id="topBtn" onclick="backToTop()">TOP</button>
+     <button onclick="window.location.href='../../index.html'">Alis导航</button>
+</body>
+</html>

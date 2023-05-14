@@ -1,0 +1,753 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>图书书籍漫画</title>
+
+    <!-- CSS 样式 -->
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            font-size: 14px;
+        }
+        th, td {
+            padding: 8px;
+            text-align: center;
+            border: 1px solid #dddddd;
+        }
+        th {
+            background-color: #dddddd;
+            font-weight: bold;
+        }
+        /* 新增CSS规则：使TOP按钮浮动在页面右下角 */
+        #topBtn {
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            background-color: #5F9EA0;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 4px;
+            width: 80px;
+            height: 80px;
+            transition: opacity 0.3s;
+            opacity: 0.5;
+            z-index: 99;
+        }
+        #topBtn:hover {
+            opacity: 1;
+        }
+    </style>
+
+    <!-- JavaScript -->
+    <script>
+        function goToHomepage() {
+            window.location.href = "../index.html";
+        }
+
+        /* 新增JavaScript函数：回到页面顶部 */
+        function backToTop() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+        /* 新增JavaScript函数：检查页面滚动位置，显示或隐藏TOP按钮 */
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("topBtn").style.display = "block";
+            } else {
+                document.getElementById("topBtn").style.display = "none";
+            }
+        }
+    </script>
+
+</head>
+<body>
+
+    <h1><a href="图书书籍漫画"></a></h1>
+    <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: center;">
+      <th>序号</th>
+      <th>资源名称</th>
+      <th>分享链接</th>
+      <th>分类</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>【豆瓣top400】</td>
+      <td>https://pan.quark.cn/s/398a476a3fdd46fb84ff4c3df42f68a0?entry=ldstoolbooko</td>
+      <td>图书合集</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>【不可不看的20册心理学书籍】</td>
+      <td>https://pan.quark.cn/s/fc9fba81ce34453fbfec8ac227da4feb?entry=ldstoolbooko</td>
+      <td>图书合集</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>【秘密三部曲】</td>
+      <td>https://pan.quark.cn/s/967b861b3a984b9e995867b84562f439?entry=ldstoolbooko</td>
+      <td>图书合集</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>【DK大百科[儿童,人体,动物,自然,综合]】</td>
+      <td>https://pan.quark.cn/s/a17e55cd42ca49cabeab1ffc9cc48421?entry=ldstoolbooko</td>
+      <td>图书合集</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>【毕淑敏全集】</td>
+      <td>https://pan.quark.cn/s/791b8922d6624cacaeee9118878dcef9?entry=ldstoolbooko</td>
+      <td>图书合集</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>【《罗辑思维》荐书集锦（共24册）】</td>
+      <td>https://pan.quark.cn/s/5df52853e9d34a7da524cd814adcdf15?entry=ldstoolbooko</td>
+      <td>图书合集</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>【韩寒作品集】</td>
+      <td>https://pan.quark.cn/s/4c88ddfe71a3428688b7996496938ef3?entry=ldstoolbooko</td>
+      <td>图书合集</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>【《古龙小说全集》】</td>
+      <td>https://pan.quark.cn/s/959782a4332d409c88c662a691e5f09b?entry=ldstoolbooko</td>
+      <td>图书合集</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>【《史蒂芬金小说合集》】</td>
+      <td>https://pan.quark.cn/s/b04cc48b9fd54dcebee4fe13b8a564d7?entry=ldstoolbooko</td>
+      <td>图书合集</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>【金庸小说集MOBI】</td>
+      <td>https://pan.quark.cn/s/0499ba52691147d8a0a31c387b80e591?entry=ldstoolbooko</td>
+      <td>图书合集</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>【龙族全册 龙族1~7】</td>
+      <td>https://pan.quark.cn/s/a302856a66a74a889ad6a087217c11ee?entry=ldstoolbooko</td>
+      <td>图书合集</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>【精校200W字以上长篇小说100部】</td>
+      <td>https://pan.quark.cn/s/f463092fa07a47f5a6a789bb0bf75305?entry=ldstoolbooko</td>
+      <td>图书合集</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>【重生，种田合集】</td>
+      <td>https://pan.quark.cn/s/34f04fece98c47bfbea7633940f62448?entry=ldstoolbooko</td>
+      <td>图书合集</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>【25本著名玄幻修真】</td>
+      <td>https://pan.quark.cn/s/55595a5e10674bdc87edfa73b5142ce2?entry=ldstoolbooko</td>
+      <td>图书合集</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>【全球推理小说大集合 超大超全包 精选】</td>
+      <td>https://pan.quark.cn/s/ea6d1652e31f4656bd8607ae969a21f2?entry=ldstoolbooko</td>
+      <td>图书合集</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>【樊登读书会】</td>
+      <td>https://pan.quark.cn/s/f9a64f3287c3?entry=ldstoolbooko</td>
+      <td>图书合集</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>【《读者》珍藏合集】</td>
+      <td>https://pan.quark.cn/s/b4503253683e?entry=ldstoolbooko</td>
+      <td>图书合集</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>【外国精品小说】</td>
+      <td>https://pan.quark.cn/s/9e4bf9e9cc96?entry=ldstoolbooko</td>
+      <td>图书合集</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>【计算机黑皮书】</td>
+      <td>https://pan.quark.cn/s/f686637fec2d?entry=ldstoolbooko</td>
+      <td>图书合集</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>【300本经典商业】</td>
+      <td>https://pan.quark.cn/s/04cb8f807841?entry=ldstoolbooko</td>
+      <td>图书合集</td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td>【2020年度知乎书单Top排行 所有电子书合集】</td>
+      <td>https://pan.quark.cn/s/f692397c1eab?entry=ldstoolbooko</td>
+      <td>图书合集</td>
+    </tr>
+    <tr>
+      <td>22</td>
+      <td>【电子书合集  刘慈欣全集】</td>
+      <td>https://pan.quark.cn/s/7ea94ad6d894?entry=ldstoolbooko</td>
+      <td>图书合集</td>
+    </tr>
+    <tr>
+      <td>23</td>
+      <td>【豆瓣高评分书籍】</td>
+      <td>https://pan.quark.cn/s/299fc4fe6da6?entry=ldstoolbooko</td>
+      <td>图书合集</td>
+    </tr>
+    <tr>
+      <td>24</td>
+      <td>【珍藏版顶级画质】乌龙院四格漫画系列（套装12册）</td>
+      <td>https://pan.quark.cn/s/9581676736e7?entry=ldstoolbooko</td>
+      <td>漫画</td>
+    </tr>
+    <tr>
+      <td>25</td>
+      <td>【海贼王 全彩版漫画】</td>
+      <td>https://pan.quark.cn/s/490af45b5a86?entry=ldstoolbooko</td>
+      <td>漫画</td>
+    </tr>
+    <tr>
+      <td>26</td>
+      <td>【灌篮高手】</td>
+      <td>https://pan.quark.cn/s/8bf940545c66?entry=ldstoolbooko</td>
+      <td>漫画</td>
+    </tr>
+    <tr>
+      <td>27</td>
+      <td>【死亡笔记(动画+真人电影+漫画)】</td>
+      <td>https://pan.quark.cn/s/c15afaa46b92?entry=ldstoolbooko</td>
+      <td>漫画</td>
+    </tr>
+    <tr>
+      <td>28</td>
+      <td>【武侠小说 几百本】</td>
+      <td>https://pan.quark.cn/s/5ae802f583bc?entry=ldstoolbooko</td>
+      <td>图书合集</td>
+    </tr>
+    <tr>
+      <td>29</td>
+      <td>【网游文】</td>
+      <td>https://pan.quark.cn/s/e5e66d872513?entry=ldstoolbooko</td>
+      <td>图书合集</td>
+    </tr>
+    <tr>
+      <td>30</td>
+      <td>【网络小说】</td>
+      <td>https://pan.quark.cn/s/fa22e0979cab?entry=ldstoolbooko</td>
+      <td>图书合集</td>
+    </tr>
+    <tr>
+      <td>31</td>
+      <td>【起点爆款小说115本】</td>
+      <td>https://pan.quark.cn/s/d06c8b6011f3?entry=ldstoolbooko</td>
+      <td>图书合集</td>
+    </tr>
+    <tr>
+      <td>32</td>
+      <td>【知乎合集】</td>
+      <td>https://pan.quark.cn/s/804be6352e8c?entry=ldstoolbooko</td>
+      <td>图书合集</td>
+    </tr>
+    <tr>
+      <td>33</td>
+      <td>【书迷必存附带目录预览C】</td>
+      <td>https://pan.quark.cn/s/b2074dc4624d?entry=ldstoolbooko</td>
+      <td>图书合集</td>
+    </tr>
+    <tr>
+      <td>34</td>
+      <td>【书迷必存附带目录预览B】</td>
+      <td>https://pan.quark.cn/s/7b0525dc0d72?entry=ldstoolbooko</td>
+      <td>图书合集</td>
+    </tr>
+    <tr>
+      <td>35</td>
+      <td>【玄幻】</td>
+      <td>https://pan.quark.cn/s/9d3a2c3f116b?entry=ldstoolbooko</td>
+      <td>图书合集</td>
+    </tr>
+    <tr>
+      <td>36</td>
+      <td>【心理学书籍】</td>
+      <td>https://pan.quark.cn/s/6a02857d9f74?entry=ldstoolbooko</td>
+      <td>图书合集</td>
+    </tr>
+    <tr>
+      <td>37</td>
+      <td>【亚马逊镇店之宝】</td>
+      <td>https://pan.quark.cn/s/355d8a5a2c28?entry=ldstoolbooko</td>
+      <td>图书合集</td>
+    </tr>
+    <tr>
+      <td>38</td>
+      <td>【书迷必存附带目录预览A】</td>
+      <td>https://pan.quark.cn/s/dd69d7831c64?entry=ldstoolbooko</td>
+      <td>图书合集</td>
+    </tr>
+    <tr>
+      <td>39</td>
+      <td>【官场小说】</td>
+      <td>https://pan.quark.cn/s/286620c34196?entry=ldstoolbooko</td>
+      <td>图书合集</td>
+    </tr>
+    <tr>
+      <td>40</td>
+      <td>【科幻小说】</td>
+      <td>https://pan.quark.cn/s/910954bff8a8?entry=ldstoolbooko</td>
+      <td>图书合集</td>
+    </tr>
+    <tr>
+      <td>41</td>
+      <td>【经典小说】</td>
+      <td>https://pan.quark.cn/s/68c5752b0f6e?entry=ldstoolbooko</td>
+      <td>图书合集</td>
+    </tr>
+    <tr>
+      <td>42</td>
+      <td>【黄易作品集 39部】</td>
+      <td>https://pan.quark.cn/s/6270961ceefb?entry=ldstoolbooko</td>
+      <td>图书合集</td>
+    </tr>
+    <tr>
+      <td>43</td>
+      <td>【倪匡小说全集】</td>
+      <td>https://pan.quark.cn/s/dc14a611bd9f?entry=ldstoolbooko</td>
+      <td>图书合集</td>
+    </tr>
+    <tr>
+      <td>44</td>
+      <td>【历史皇朝之 《清12帝》】</td>
+      <td>https://pan.quark.cn/s/fa44ce6f5b3c?entry=ldstoolbooko</td>
+      <td>图书合集</td>
+    </tr>
+    <tr>
+      <td>45</td>
+      <td>【古今神秘现象全纪录】</td>
+      <td>https://pan.quark.cn/s/7c65251afbe1?entry=ldstoolbooko</td>
+      <td>图书合集</td>
+    </tr>
+    <tr>
+      <td>46</td>
+      <td>【中国十大帝王藏书合集】</td>
+      <td>https://pan.quark.cn/s/b0966e0f6644?entry=ldstoolbooko</td>
+      <td>专著</td>
+    </tr>
+    <tr>
+      <td>47</td>
+      <td>【五千年演义全套】</td>
+      <td>https://pan.quark.cn/s/fd9b55869174?entry=ldstoolbooko</td>
+      <td>专著</td>
+    </tr>
+    <tr>
+      <td>48</td>
+      <td>【中外经典名著1000部】</td>
+      <td>https://pan.quark.cn/s/79ddbaa17649?entry=ldstoolbooko</td>
+      <td>专著</td>
+    </tr>
+    <tr>
+      <td>49</td>
+      <td>【宋词】</td>
+      <td>https://pan.quark.cn/s/b4705dd80432?entry=ldstoolbooko</td>
+      <td>专著</td>
+    </tr>
+    <tr>
+      <td>50</td>
+      <td>【唐诗】</td>
+      <td>https://pan.quark.cn/s/8cc6d11f30e6?entry=ldstoolbooko</td>
+      <td>专著</td>
+    </tr>
+    <tr>
+      <td>51</td>
+      <td>【元曲】格式</td>
+      <td>https://pan.quark.cn/s/e60c69118f02?entry=ldstoolbooko</td>
+      <td>专著</td>
+    </tr>
+    <tr>
+      <td>52</td>
+      <td>【二十世纪中文小说百强系列】</td>
+      <td>https://pan.quark.cn/s/3f1289a2bf54?entry=ldstoolbooko</td>
+      <td>图书合集</td>
+    </tr>
+    <tr>
+      <td>53</td>
+      <td>【34种行业分类电子书大全】</td>
+      <td>https://pan.quark.cn/s/851d473731f8?entry=ldstoolbooko</td>
+      <td>图书合集</td>
+    </tr>
+    <tr>
+      <td>54</td>
+      <td>【惊悚小说合集】</td>
+      <td>https://pan.quark.cn/s/030c105f0d18?entry=ldstoolbooko</td>
+      <td>小说</td>
+    </tr>
+    <tr>
+      <td>55</td>
+      <td>【BBC自然探索系列】</td>
+      <td>https://pan.quark.cn/s/50f469a482da?entry=ldstoolbooko</td>
+      <td>图书合集</td>
+    </tr>
+    <tr>
+      <td>56</td>
+      <td>【一代文学大师林语堂逝世40周年纪念典藏版】</td>
+      <td>https://pan.quark.cn/s/4818f7ed5fd4?entry=ldstoolbooko</td>
+      <td>专著</td>
+    </tr>
+    <tr>
+      <td>57</td>
+      <td>【路遥作品】</td>
+      <td>https://pan.quark.cn/s/77e61a16d0f4?entry=ldstoolbooko</td>
+      <td>专著</td>
+    </tr>
+    <tr>
+      <td>58</td>
+      <td>【聊斋故事 】</td>
+      <td>https://pan.quark.cn/s/7ab3142f450f?entry=ldstoolbooko</td>
+      <td>专著</td>
+    </tr>
+    <tr>
+      <td>59</td>
+      <td>【希腊神话故事】</td>
+      <td>https://pan.quark.cn/s/39d115c2f4bb?entry=ldstoolbooko</td>
+      <td>专著</td>
+    </tr>
+    <tr>
+      <td>60</td>
+      <td>【戴建业作品集 】</td>
+      <td>https://pan.quark.cn/s/f1db58ad2623?entry=ldstoolbooko</td>
+      <td>专著</td>
+    </tr>
+    <tr>
+      <td>61</td>
+      <td>【蔡元培全集】</td>
+      <td>https://pan.quark.cn/s/0bcbb8533606?entry=ldstoolbooko</td>
+      <td>专著</td>
+    </tr>
+    <tr>
+      <td>62</td>
+      <td>【费孝通文集】</td>
+      <td>https://pan.quark.cn/s/f82b44aca1fb?entry=ldstoolbooko</td>
+      <td>专著</td>
+    </tr>
+    <tr>
+      <td>63</td>
+      <td>【郭沫若全集】</td>
+      <td>https://pan.quark.cn/s/13132aca34c1?entry=ldstoolbooko</td>
+      <td>专著</td>
+    </tr>
+    <tr>
+      <td>64</td>
+      <td>【季羡林散文精选】</td>
+      <td>https://pan.quark.cn/s/3326e0dd95bb?entry=ldstoolbooko</td>
+      <td>专著</td>
+    </tr>
+    <tr>
+      <td>65</td>
+      <td>【老舍文集】</td>
+      <td>https://pan.quark.cn/s/99b904249afc?entry=ldstoolbooko</td>
+      <td>专著</td>
+    </tr>
+    <tr>
+      <td>66</td>
+      <td>【林清玄作品】</td>
+      <td>https://pan.quark.cn/s/ea3edacf4600?entry=ldstoolbooko</td>
+      <td>专著</td>
+    </tr>
+    <tr>
+      <td>67</td>
+      <td>【800本 连环画 儿时记忆】</td>
+      <td>https://pan.quark.cn/s/adc6aa259c35?entry=ldstoolbooko</td>
+      <td>漫画</td>
+    </tr>
+    <tr>
+      <td>68</td>
+      <td>【十万个为什么】</td>
+      <td>https://pan.quark.cn/s/f261ba9b1fd4?entry=ldstoolbooko</td>
+      <td>图书合集</td>
+    </tr>
+    <tr>
+      <td>69</td>
+      <td>【常见心理学-经典26部】</td>
+      <td>https://pan.quark.cn/s/f4b10c524137?entry=ldstoolbooko</td>
+      <td>图书合集</td>
+    </tr>
+    <tr>
+      <td>70</td>
+      <td>【情绪控制术】</td>
+      <td>https://pan.quark.cn/s/8445d7eba455?entry=ldstoolbooko</td>
+      <td>专著</td>
+    </tr>
+    <tr>
+      <td>71</td>
+      <td>【好口才是练出来的】</td>
+      <td>https://pan.quark.cn/s/c32017938e9b?entry=ldstoolbooko</td>
+      <td>专著</td>
+    </tr>
+    <tr>
+      <td>72</td>
+      <td>【名人名言录】</td>
+      <td>https://pan.quark.cn/s/d07ffeec3c8c?entry=ldstoolbooko</td>
+      <td>专著</td>
+    </tr>
+    <tr>
+      <td>73</td>
+      <td>【总能让你赢的101个怪诞心理游戏】</td>
+      <td>https://pan.quark.cn/s/48cf5e9d5658?entry=ldstoolbooko</td>
+      <td>专著</td>
+    </tr>
+    <tr>
+      <td>74</td>
+      <td>【自己是最好的医生大全集】</td>
+      <td>https://pan.quark.cn/s/2081980f3df0?entry=ldstoolbooko</td>
+      <td>专著</td>
+    </tr>
+    <tr>
+      <td>75</td>
+      <td>【十四堂人生创意课】</td>
+      <td>https://pan.quark.cn/s/6c7223df998b?entry=ldstoolbooko</td>
+      <td>专著</td>
+    </tr>
+    <tr>
+      <td>76</td>
+      <td>【营养圣经·最佳营养学指南】</td>
+      <td>https://pan.quark.cn/s/f7ca1380d099?entry=ldstoolbooko</td>
+      <td>专著</td>
+    </tr>
+    <tr>
+      <td>77</td>
+      <td>【金正昆】</td>
+      <td>https://pan.quark.cn/s/133a921f0bbf?entry=ldstoolbooko</td>
+      <td>专著</td>
+    </tr>
+    <tr>
+      <td>78</td>
+      <td>【几千万本PDF格式图书大合集】</td>
+      <td>https://pan.quark.cn/s/26c4b26345d9?entry=ldstoolbooko</td>
+      <td>专著</td>
+    </tr>
+    <tr>
+      <td>79</td>
+      <td>【中国最美的气质套装】</td>
+      <td>https://pan.quark.cn/s/f2a196b49278?entry=ldstoolbooko</td>
+      <td>图书合集</td>
+    </tr>
+    <tr>
+      <td>80</td>
+      <td>【胡适日记全编】</td>
+      <td>https://pan.quark.cn/s/75b63d46959e?entry=ldstoolbooko</td>
+      <td>图书合集</td>
+    </tr>
+    <tr>
+      <td>81</td>
+      <td>【故事会(1964-2019年) 完整大全集】</td>
+      <td>https://pan.quark.cn/s/2793ac547bf1?entry=ldstoolbooko</td>
+      <td>图书合集</td>
+    </tr>
+    <tr>
+      <td>82</td>
+      <td>【“太空漫游”四部曲】</td>
+      <td>https://pan.quark.cn/s/cea83c51432d?entry=ldstoolbooko</td>
+      <td>图书合集</td>
+    </tr>
+    <tr>
+      <td>83</td>
+      <td>【大秦帝国】</td>
+      <td>https://pan.quark.cn/s/36800847e9b2?entry=ldstoolbooko</td>
+      <td>小说</td>
+    </tr>
+    <tr>
+      <td>84</td>
+      <td>【执行力是训练出来的】</td>
+      <td>https://pan.quark.cn/s/8dc375ad2f94?entry=ldstoolbooko</td>
+      <td>专著</td>
+    </tr>
+    <tr>
+      <td>85</td>
+      <td>【给孩子讲点故事】</td>
+      <td>https://pan.quark.cn/s/2e9e46a8e56d?entry=ldstoolbooko</td>
+      <td>专著</td>
+    </tr>
+    <tr>
+      <td>86</td>
+      <td>【世界经典机智与幽默系列丛书】</td>
+      <td>https://pan.quark.cn/s/d460dd748471?entry=ldstoolbooko</td>
+      <td>专著</td>
+    </tr>
+    <tr>
+      <td>87</td>
+      <td>【有声书】</td>
+      <td>https://pan.quark.cn/s/d8987b5729d4?entry=ldstoolbooko</td>
+      <td>专著</td>
+    </tr>
+    <tr>
+      <td>88</td>
+      <td>【图灵程序设计丛书】</td>
+      <td>https://pan.quark.cn/s/3d2f04865ccc?entry=ldstoolbooko</td>
+      <td>专著</td>
+    </tr>
+    <tr>
+      <td>89</td>
+      <td>【全球好书100本推荐】</td>
+      <td>https://pan.quark.cn/s/e2d042c7d798?entry=ldstoolbooko</td>
+      <td>专著</td>
+    </tr>
+    <tr>
+      <td>90</td>
+      <td>【美食电子书】</td>
+      <td>https://pan.quark.cn/s/04bb77b4e4dd?entry=ldstoolbooko</td>
+      <td>专著</td>
+    </tr>
+    <tr>
+      <td>91</td>
+      <td>【解剖学书籍大全】</td>
+      <td>https://pan.quark.cn/s/d0ef2a5b70a6?entry=ldstoolbooko</td>
+      <td>图书合集</td>
+    </tr>
+    <tr>
+      <td>92</td>
+      <td>【医学类书籍大合集】</td>
+      <td>https://pan.quark.cn/s/740cd751dc6d?entry=ldstoolbooko</td>
+      <td>图书合集</td>
+    </tr>
+    <tr>
+      <td>93</td>
+      <td>【武侠小说 几百本】</td>
+      <td>https://pan.quark.cn/s/5ae802f583bc?entry=ldstoolbooko</td>
+      <td>小说</td>
+    </tr>
+    <tr>
+      <td>94</td>
+      <td>【网游文】</td>
+      <td>https://pan.quark.cn/s/e5e66d872513?entry=ldstoolbooko</td>
+      <td>小说</td>
+    </tr>
+    <tr>
+      <td>95</td>
+      <td>【网络小说】</td>
+      <td>https://pan.quark.cn/s/fa22e0979cab?entry=ldstoolbooko</td>
+      <td>小说</td>
+    </tr>
+    <tr>
+      <td>96</td>
+      <td>【起点爆款小说115本】</td>
+      <td>https://pan.quark.cn/s/d06c8b6011f3?entry=ldstoolbooko</td>
+      <td>小说</td>
+    </tr>
+    <tr>
+      <td>97</td>
+      <td>【知乎合集】</td>
+      <td>https://pan.quark.cn/s/804be6352e8c?entry=ldstoolbooko</td>
+      <td>小说</td>
+    </tr>
+    <tr>
+      <td>98</td>
+      <td>【书迷必存附带目录预览C】</td>
+      <td>https://pan.quark.cn/s/b2074dc4624d?entry=ldstoolbooko</td>
+      <td>图书合集</td>
+    </tr>
+    <tr>
+      <td>99</td>
+      <td>【书迷必存附带目录预览B】</td>
+      <td>https://pan.quark.cn/s/7b0525dc0d72?entry=ldstoolbooko</td>
+      <td>图书合集</td>
+    </tr>
+    <tr>
+      <td>100</td>
+      <td>【玄幻】</td>
+      <td>https://pan.quark.cn/s/9d3a2c3f116b?entry=ldstoolbooko</td>
+      <td>小说</td>
+    </tr>
+    <tr>
+      <td>101</td>
+      <td>【心理学书籍】</td>
+      <td>https://pan.quark.cn/s/6a02857d9f74?entry=ldstoolbooko</td>
+      <td>图书合集</td>
+    </tr>
+    <tr>
+      <td>102</td>
+      <td>【亚马逊镇店之宝】</td>
+      <td>https://pan.quark.cn/s/355d8a5a2c28?entry=ldstoolbooko</td>
+      <td>图书合集</td>
+    </tr>
+    <tr>
+      <td>103</td>
+      <td>【上千册免费正版图书收藏合集】</td>
+      <td>https://pan.quark.cn/s/83cd7dc60b2d?entry=ldstoolbooko</td>
+      <td>图书合集</td>
+    </tr>
+    <tr>
+      <td>104</td>
+      <td>【2021经典中英文杂志大合集】</td>
+      <td>https://pan.quark.cn/s/4648ef78b2ec?entry=ldstoolbooko</td>
+      <td>图书合集</td>
+    </tr>
+    <tr>
+      <td>105</td>
+      <td>【《燈草和尚》 漫画】</td>
+      <td>https://pan.quark.cn/s/7a1169746c50?entry=ldstoolbooko</td>
+      <td>漫画</td>
+    </tr>
+    <tr>
+      <td>106</td>
+      <td>【提升财商必读100本经典】</td>
+      <td>https://pan.quark.cn/s/e31d509a585e?entry=ldstoolbooko</td>
+      <td>专著</td>
+    </tr>
+    <tr>
+      <td>107</td>
+      <td>【《庆余年2》小说解读】</td>
+      <td>https://pan.quark.cn/s/16775a12c672?entry=ldstoolbooko</td>
+      <td>网文</td>
+    </tr>
+    <tr>
+      <td>108</td>
+      <td>【三体资源合集】</td>
+      <td>https://pan.quark.cn/s/522033fac874?entry=ldstoolbooko</td>
+      <td>小说</td>
+    </tr>
+    <tr>
+      <td>109</td>
+      <td>【沙海】</td>
+      <td>https://pan.quark.cn/s/44aaba5f08c5?entry=ldstoolbooko</td>
+      <td>小说</td>
+    </tr>
+  </tbody>
+</table>
+    <hr>
+    <h2></h2>
+    <ul>
+    <li><a href="电视剧.html">电视剧</a></li><li><a href="动漫.html">动漫</a></li><li><a href="综艺.html">综艺</a></li><li><a href="教育资源.html">教育资源</a></li><li><a href="神站.html">神站</a></li><li><a href="小初高教育.html">小初高教育</a></li><li><a href="电影.html">电影</a></li><li><a href="盘搜1.html">盘搜1</a></li><li><a href="考研教育资源.html">考研教育资源</a></li><li><a href="盘搜2.html">盘搜2</a></li><li><a href="游戏软件.html">游戏软件</a></li><li><a href="学而思精品内容.html">学而思精品内容</a></li>
+    </ul>
+     <!-- 新增TOP按钮 -->
+     <button id="topBtn" onclick="backToTop()">TOP</button>
+     <button onclick="window.location.href='../../index.html'">Alis导航</button>
+</body>
+</html>
