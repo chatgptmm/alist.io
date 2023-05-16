@@ -112,10 +112,22 @@
         gtag('js', new Date());
         gtag('config', 'G-1S9XDS3SR8');
     </script>
+    <script>
+        function updateMarqueeText() {
+          let now = new Date();
+          let dateStr = now.toLocaleDateString("zh-CN");
+          let timeStr = now.toLocaleTimeString("zh-CN");
+          let marqueeText = `通知：欢迎来到Alist网盘分享！今天是${dateStr}，现在是${timeStr}，最新电影、剧集、综艺、动漫、课程、短视频、有声书、书籍、软件、素材应有尽有，快快分享吧！DNS污染导致无法访问，清除本机DNS即可！`;
+          document.getElementById("marquee-text").textContent = marqueeText;
+        }
+
+        updateMarqueeText();
+        setInterval(updateMarqueeText, 60000); // 每分钟更新一次
+    </script>
 </head>
 <body>
     <div class="notice">
-        <div class="marquee">
+        <div class="marquee" id="marquee-text">
             通知：欢迎来到Alist网盘分享！新一代观影方式，最新电影、剧集、综艺、动漫、课程、短视频、有声书、书籍、软件、素材应有尽有，快快分享吧！DNS污染导致无法访问，清除本机DNS即可！
         </div>
     </div>
