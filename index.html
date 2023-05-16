@@ -1,75 +1,126 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta charset="UTF-8">
     <title>Alist网盘分享|电影|剧集|..|软件</title>
     <style>
-      /* 简单的样式定义 */
-      body {
-        background-color: #fff;
-        text-align: center;
-        margin: 0;
-        padding: 0;
-      }
-      h1 {
-        font-size: 4em;
-        margin-top: 2em;
-        margin-bottom: 0.2em;
-        color: #000;
-        text-shadow: 2px 2px 4px #ccc;
-      }
-      .container {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 80%;
-        max-width: 1200px;
-      }
-      .button-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: nowrap;
-      }
-      button {
-        margin: 2em;
-        padding: 1.5em 3em;
-        font-size: 2em;
-        background-color: #0077cc;
-        background-image: linear-gradient(to bottom, #0077cc, #005fa3);
-        color: #fff;
-        border-radius: 5px;
-        border: none;
-        cursor: pointer;
-        transition: all 0.2s ease-in-out;
-        width: 30%;
-        height: 20%;
-      }
-      button:hover {
-        background-image: linear-gradient(to bottom, #005fa3, #0077cc);
-      }
-      .image-container {
-        margin-top: 3em;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
-      img {
-        max-width: 100%;
-        height: auto;
-        margin-bottom: 1em;
-      }
-      p {
-        font-size: 1.2em;
-        color: #666;
-        text-align: center;
-      }
+        /* 简单的样式定义 */
+        body {
+            background-color: #fff;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            font-size: 16px;
+        }
+        h1 {
+            font-size: 4em;
+            margin-top: 2em;
+            margin-bottom: 0.2em;
+            color: #000;
+            text-shadow: 2px 2px 4px #ccc;
+        }
+        .container {
+            position: relative;
+            margin: 120px auto 0;
+            width: 80%;
+            max-width: 1200px;
+        }
+        .button-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: nowrap;
+        }
+        button {
+            margin: 2em;
+            padding: 1.5em 3em;
+            font-size: 2em;
+            background-color: #0077cc;
+            background-image: linear-gradient(to bottom, #0077cc, #005fa3);
+            color: #fff;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            transition: all 0.2s ease-in-out;
+            width: 30%;
+            height: 20%;
+        }
+        button:hover {
+            background-image: linear-gradient(to bottom, #005fa3, #0077cc);
+        }
+        .image-container {
+            margin-top: 3em;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 1em;
+        }
+        p {
+            font-size: 1.2em;
+            color: #666;
+            text-align: center;
+        }
+        /* 滚动通知样式 */
+        .notice {
+            height: 30px;
+            line-height: 30px;
+            background-color: #fff;
+            border: 1px solid transparent;
+            overflow: hidden;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 999;
+        }
+        .notice .marquee {
+            display: inline-block;
+            white-space: nowrap;
+            padding-left: 100%;
+            animation: marquee 20s linear infinite;
+            font-size: 2em;
+            color: red;
+        }
+        /* 滚动动画样式 */
+        @keyframes marquee {
+            from {
+                transform: translate3d(0, 0, 0);
+            }
+            to {
+                transform: translate3d(-100%, 0, 0);
+            }
+        }
     </style>
-  </head>
-  <body>
-     <div class="container">
-      <h1>Alist网盘分享</h1>
+    <!-- Google 广告服务代码 -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5419274503401105"
+            crossorigin="anonymous"></script>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({
+        google_ad_client: "ca-pub-5419274503401105",
+        enable_page_level_ads: true
+      });
+    </script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1S9XDS3SR8"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-1S9XDS3SR8');
+    </script>
+</head>
+<body>
+    <div class="notice">
+        <div class="marquee">
+            通知：欢迎来到Alist网盘分享！新一代观影方式，最新电影、剧集、综艺、动漫、课程、短视频、有声书、书籍、软件、素材应有尽有，快快分享吧！DNS污染导致无法访问，清除本机DNS即可！
+        </div>
+    </div>
+    <div class="container">
+       <h1>Alist网盘分享</h1>
       <div class="button-container">
         <button onclick="window.location.href='./docs/aliyun/首页.html'">阿里云</button>
         <button onclick="window.location.href='./docs/xunlei/电影.html'">夸克云</button>
@@ -83,17 +134,8 @@
           <p>收集不易，感谢支持</p>
          <img src="./src/share.png"alt="谢谢分享">
          <p>免费是传统，分享是美德</p>
-        <p>Copyright  ©2020- 2023一瓶水钱</p>
+        <p>版权所有 ©2020- 2023一瓶水钱</p>
       </div>
     </div>
-  </body>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-1S9XDS3SR8"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-1S9XDS3SR8');
-</script>
+</body>
 </html>
