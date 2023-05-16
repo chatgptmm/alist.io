@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首页</title>
+
+    <!-- CSS 样式 -->
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            font-size: 14px;
+        }
+        th, td {
+            padding: 8px;
+            text-align: center;
+            border: 1px solid #dddddd;
+        }
+        th {
+            background-color: #dddddd;
+            font-weight: bold;
+        }
+        /* 新增CSS规则：使TOP按钮浮动在页面右下角 */
+        #topBtn {
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            background-color: #5F9EA0;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 4px;
+            width: 80px;
+            height: 80px;
+            transition: opacity 0.3s;
+            opacity: 0.5;
+            z-index: 99;
+        }
+        #topBtn:hover {
+            opacity: 1;
+        }
+    </style>
+
+    <!-- JavaScript -->
+    <script>
+        function goToHomepage() {
+            window.location.href = "../index.html";
+        }
+
+        /* 新增JavaScript函数：回到页面顶部 */
+        function backToTop() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+        /* 新增JavaScript函数：检查页面滚动位置，显示或隐藏TOP按钮 */
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("topBtn").style.display = "block";
+            } else {
+                document.getElementById("topBtn").style.display = "none";
+            }
+        }
+    </script>
+
+</head>
+<body>
+
+    <h1><a href="首页"></a></h1>
+    <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: center;">
+      <th>每天更新，关注我 不愁资源 带你飞</th>
+      <th>Unnamed: 1</th>
+      <th>Unnamed: 2</th>
+      <th>Unnamed: 3</th>
+      <th>文档内容均收集于网络公开的渠道，仅供学习参考使用，下载后请于24小时内删除，禁止用于商用，如有侵权，请联系删除。
+永远不涉及任何利益，无偿分享，用爱发电，无任何其他地址。</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>如果文档,临时被禁止访问,大家可以,过几小时或24小时后,再次查看试试</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>剧集</td>
+      <td>【土豆】※千T阿里云资源※每天更新 建议收藏下载</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>电影</td>
+      <td>【土豆】※千T阿里云资源※每天更新 建议收藏下载</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>学习</td>
+      <td>【土豆】※千T阿里云资源※每天更新 建议收藏下载</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>动漫</td>
+      <td>【土豆】※千T阿里云资源※每天更新 建议收藏下载</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>纪录片</td>
+      <td>【土豆】※千T阿里云资源※每天更新 建议收藏下载</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>软件</td>
+      <td>【土豆】※千T阿里云资源※每天更新 建议收藏下载</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>综艺</td>
+      <td>【土豆】※千T阿里云资源※每天更新 建议收藏下载</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>书籍</td>
+      <td>【土豆】※千T阿里云资源※每天更新 建议收藏下载</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>合集专区</td>
+      <td>【土豆】※千T阿里云资源※每天更新 建议收藏下载</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>模版素材</td>
+      <td>【土豆】※千T阿里云资源※每天更新 建议收藏下载</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table>
+    <hr>
+    <h2></h2>
+    <ul>
+    <li><a href="剧集.html">剧集</a></li><li><a href="电影.html">电影</a></li><li><a href="学习.html">学习</a></li><li><a href="动漫.html">动漫</a></li><li><a href="纪录片.html">纪录片</a></li><li><a href="软件.html">软件</a></li><li><a href="综艺.html">综艺</a></li><li><a href="【成人专区】.html">【成人专区】</a></li><li><a href="书籍.html">书籍</a></li><li><a href="合集专区.html">合集专区</a></li><li><a href="素材模板.html">素材模板</a></li>
+    </ul>
+     <!-- 新增TOP按钮 -->
+     <button id="topBtn" onclick="backToTop()">TOP</button>
+     <button onclick="window.location.href='../../index.html'">Alis导航</button>
+</body>
+</html>
