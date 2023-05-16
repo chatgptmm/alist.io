@@ -65,12 +65,53 @@
         color: #666;
         text-align: center;
       }
+      .notice {
+        height: 30px;
+        line-height: 30px;
+        background-color: #ffe4c4;
+        overflow: hidden;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+      }
     </style>
+
+    <!-- Google 统计服务代码 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1S9XDS3SR8"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-1S9XDS3SR8');
+    </script>
+
+    <!-- Google 广告服务代码 -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5419274503401105"
+            crossorigin="anonymous"></script>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({
+        google_ad_client: "ca-pub-5419274503401105",
+        enable_page_level_ads: true
+      });
+    </script>
+
+    <script>
+      var notice = document.querySelector('.notice marquee');
+
+      notice.addEventListener('mouseover', function() {
+        this.stop();
+      });
+
+      notice.addEventListener('mouseout', function() {
+        this.start();
+      });
+    </script>
   </head>
-   <head>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5419274503401105"
-     crossorigin="anonymous"></script>
-  </head>
+  <body>
+    <div class="notice">
+      <marquee>这里是滚动通知的内容。</marquee>
+    </div>
     <body>
     <div class="container">
       <h1>Alist网盘分享</h1>
