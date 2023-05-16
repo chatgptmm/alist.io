@@ -21,7 +21,7 @@
 	<div style="display: flex; gap: 20px;">
 	<div style="text-align: center">
 		<img style="max-width: 100%" src="./src/Alipay.png" alt="支付宝" />
-		<p>WeChat Pay</p>
+		<p>Alipay Pay</p>
 	</div>
 		</div>
 </div>
